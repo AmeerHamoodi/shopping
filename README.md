@@ -1,3 +1,3 @@
 # shopping
 
-Really bad php :v
+My first real PHP project
