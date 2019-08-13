@@ -1,6 +1,6 @@
 <?php
 
-$conn = mysqli_connect("localhost", "id7017993_ahamoodi0602", "pricey31", "id7017993_merbook");
+$conn = mysqli_connect("localhost", "root", "", "shopping");
 
 if(isset($_POST['fileuploadsubmit'])) {
 
@@ -33,7 +33,7 @@ $qry = mysqli_query($conn, $sql);
 ?>
 <?php
 session_start();  
- //$connect = mysqli_connect("localhost", "root", "", "test");  
+ $connect = mysqli_connect("localhost", "root", "", "test");  
  if(isset($_POST["add_to_cart"]))  
  {  
       if(isset($_SESSION["shopping_cart"]))  
@@ -187,9 +187,6 @@ if(isset($_POST['suby'])){
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Page 1</a></li>
-      <li><a href="#">Page 2</a></li>
-      <li><a href="#">Page 3</a></li>
     </ul>
     <?php
     if(isset($_SESSION['name'])){ ?>
@@ -302,7 +299,7 @@ echo "<h4>Welcome ".$_SESSION['name']." to MerShop-co";
 
 
 
-$conn = mysqli_connect("localhost", "id7017993_ahamoodi0602", "pricey31", "id7017993_merbook");
+$conn = mysqli_connect("localhost", "root", "", "shopping");
 
 
 $select = " SELECT * FROM updis " ;
@@ -318,19 +315,6 @@ while($row = mysqli_fetch_array($query)) {
  $thing = $row['name'];
  $price = $row['price'];
 
-
-
-
- //"<img src='images/".$image."' " height='300px' width='250px'/> ";
-/* echo '<center>';
-echo '<div class ="col-md-4">';
-echo 
-echo '<h3>'.$thing."</h3>"."<p>".$company."<p/>";
-echo '<img src="images/'.$image.'" height="150px" width="150px" >';
-echo "<br>";
-echo "$".$price;
-echo '</div>';
-echo '</center>';*/
 
  
 

@@ -1,6 +1,6 @@
 <?php
 
-$conn = mysqli_connect("localhost", "id7017993_ahamoodi0602", "pricey31", "id7017993_merbook");
+$conn = mysqli_connect("localhost", "root", "", "shopping");
 
 if(isset($_POST['submit'])){
 $uid = mysqli_real_escape_string($conn, $_POST['uid']);
